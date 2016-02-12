@@ -1,0 +1,41 @@
+doctype
+html
+    head
+        link(href='styles.css', rel='stylesheet')
+        link(href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css', rel='stylesheet')
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js")
+        
+        
+        
+    body
+        .container
+                .card-wrapper
+                    .card
+                        .image-wrapper                        
+                            .image: img.picture(src="images/burger.jpg")
+                        .circle
+                        h2.card-header BACON BURGERS
+                        .card-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ab tempore aut, sint aspernatur. Quas iure enim, natus obcaecati earum delectus totam suscipit porro laboriosam dolor dignissimos voluptatibus, expedita perspiciatis?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga deserunt repellendus magnam, pariatur corporis cupiditate fugiat, quo molestiae quis, obcaecati impedit accusantium laboriosam ducimus dolorum tenetur similique quaerat quas.
+                        a(href=""): .read  Read More
+                
+                .card-wrapper
+                    .card
+                        .image-wrapper                        
+                            .image: img.picture(src="images/burger.jpg")
+                        .circle
+                        h2.card-header BACON BURGERS
+                        .card-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ab tempore aut, sint aspernatur. Quas iure enim, natus obcaecati earum delectus totam suscipit porro laboriosam dolor dignissimos voluptatibus, expedita perspiciatis?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga deserunt repellendus magnam, pariatur corporis cupiditate fugiat, quo molestiae quis, obcaecati impedit accusantium laboriosam ducimus dolorum tenetur similique quaerat quas.
+                        a(href=""): .read  Read More
+                        
+        script.
+            $(function() {
+            $( ".card-wrapper" ).draggable({
+            containment: 'window',
+            axis: "x",
+            snap: '.card-wrapper'
+            
+            });
+            
+            
+            });                

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="image-wrapper">                       
+            <div class="image"><img src="images/burger.jpg" class="picture"></div>
+          </div>
+          <div class="circle"></div>
+          <h2 class="card-header">BACON BURGERS</h2>
+          <div class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ab tempore aut, sint aspernatur. Quas iure enim, natus obcaecati earum delectus totam suscipit porro laboriosam dolor dignissimos voluptatibus, expedita perspiciatis?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga deserunt repellendus magnam, pariatur corporis cupiditate fugiat, quo molestiae quis, obcaecati impedit accusantium laboriosam ducimus dolorum tenetur similique quaerat quas.</div><a href="">
+            <div class="read"> Read More</div></a>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="image-wrapper">                       
+            <div class="image"><img src="images/burger.jpg" class="picture"></div>
+          </div>
+          <div class="circle"></div>
+          <h2 class="card-header">BACON BURGERS</h2>
+          <div class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ab tempore aut, sint aspernatur. Quas iure enim, natus obcaecati earum delectus totam suscipit porro laboriosam dolor dignissimos voluptatibus, expedita perspiciatis?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fuga deserunt repellendus magnam, pariatur corporis cupiditate fugiat, quo molestiae quis, obcaecati impedit accusantium laboriosam ducimus dolorum tenetur similique quaerat quas.</div><a href="">
+            <div class="read"> Read More</div></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function() {
+      $( ".card-wrapper" ).draggable({
+      containment: 'window',
+      axis: "x",
+      snap: '.card-wrapper'
+      
+      });
+      
+      
+      });                
+    </script>
+  </body>
+</html>
